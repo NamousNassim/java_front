@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Login from './components/Login';
+import Home from './components/Home';
+import Register from './components/Register';
+import About from './components/About';
+import AccountSettings from './components/AccountSettings';
+import Contact from './components/Contact';
+import ProposalClient from './components/ProposalClient';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/account" element={<AccountSettings />} />
+        <Route path="/contact/:freelancerId" element={<Contact />} />
+        <Route path="/proposal/:clientId" element={<ProposalClient />} />
+        
+      </Routes>
+    </Router>
   );
 }
 

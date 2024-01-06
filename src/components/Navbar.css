@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #f8f9fa !important; /* light grey */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  }
+  
+  .navbar .navbar-brand {
+    color: #333; /* dark text for contrast */
+    font-weight: bold;
+  }
+  
+  .navbar .nav-link {
+    color: #333; /* dark text for contrast */
+  }
+  
+  .navbar .form-control {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  }

@@ -1,0 +1,20 @@
+
+.home-page-header {
+    padding: 50px 0; 
+    background-color: #f8f9fa; 
+  }
+  
+  .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .motivation-quote {
+    font-style: italic;
+    color: #6c757d; 
+    margin-top: 20px;
+  }
+  
+  .btn-primary {
+    margin-top: 30px; 
+  }
